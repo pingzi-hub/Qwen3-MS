@@ -30,9 +30,6 @@
 
 ## 📁 项目结构
 项目采用模块化设计，核心文件和目录如下：
-## 项目结构
-
-## 项目结构
 
 /项目实战/
   - 核心脚本
@@ -106,21 +103,20 @@ assistant = MedicalAssistant("./output/Qwen3-0.6B/checkpoint-900")
 assistant.load_model()
 
 #### 询问问题
-response = assistant.ask_question(
+<small>
+ response = assistant.ask_question(
     "我最近胃部不适，可能是什么原因？", 
     scenario_type="diagnosis"
-)
-print(response)
+ )
+ print(response)
+  </small>
 ---
 
 ## 📈 模型性能
 - **准确率**: 在常见疾病诊断建议上达到 85%+ 的准确率。
 - **响应时间**: GPU 推理平均响应时间 < 2 秒。
 - **模型规模**: 0.6B 参数，适合本地部署与微调。
-
-**训练效果对比**：
-- **全参数微调**：效果更好，但计算与显存资源消耗大。
-- **LoRA 微调**：资源消耗小，收敛快，效果略逊于全参数微调，是高效的轻量级微调方案。
+- **LoRA 微调**：资源消耗小，收敛快，是高效的轻量级微调方案。
 
 ---
 
@@ -177,7 +173,7 @@ LLM:
 ## 🔗 相关资源
 - **基础模型**: [Qwen3-0.6B on ModelScope](https://modelscope.cn/models/qwen/Qwen3-0.6B)
 - **训练可视化**: [SwanLab](https://swanlab.cn/@K-15883469568/qwen3-medical-cpu/overview) 
-- **数据集**:  (https://modelscope.cn/datasets/TsundereHan/Medicine)
+- **数据集**: [TsundereHan/Medicine](https://modelscope.cn/datasets/TsundereHan/Medicine)
 
 
 ---
