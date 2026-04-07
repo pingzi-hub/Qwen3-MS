@@ -87,21 +87,17 @@
 ## 🚀 快速开始
 ### 1. 环境准备
 确保已安装 Python 3.8+ 和 pip，然后安装项目依赖：
-bash
 pip install -r requirements.txt
 ### 2. 模型下载
 运行模型下载脚本，自动获取 Qwen3-0.6B 基础模型：
-bash
 python download_model.py
 ### 3. 运行医疗助手
 启动交互式医疗咨询助手：
-bash
 python medical_assistant.py
 ### 4. 命令行使用
 #### 单次问答
 python medical_assistant.py -q " 医生，我最近感冒了，适合吃什么药物，以及其中的作用机制是咋样的，详细说明下作用机制，成都的？" -s diagnosis
 #### 体检报告识别
-bash
 python medical_assistant.py -i "F:/AI/PythonProject2/ecg_simple.jpg" -s 13
 #### 批量处理
 python medical_assistant.py -b sample_questions.json
